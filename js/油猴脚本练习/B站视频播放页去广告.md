@@ -36,7 +36,10 @@
     // 使用方式
     waitForElement('.up-avatar .bili-avatar', (el) => {
         // 评论区上方
-        document.querySelector('.ad-report.ad-floor-exp.left-banner').remove()
+        let ad1 = document.querySelector('.ad-report.ad-floor-exp.left-banner')
+        if (ad1) {
+            ad1.remove()
+        }
         // 右侧，弹幕列表下方
         document.querySelector('#slide_ad').remove()
         // 页面右下方
