@@ -39,11 +39,20 @@
         let ad1 = document.querySelector('.ad-report.ad-floor-exp.left-banner')
         if (ad1) {
             ad1.remove()
+            console.log('已移除广告位置：评论区上方');
         }
         // 右侧，弹幕列表下方
-        document.querySelector('#slide_ad').remove()
+        let ad2 = document.querySelector('.video-card-ad-small')
+        if (ad2) {
+            ad2.remove()
+            console.log('已移除广告位置：右侧，弹幕列表下方');
+        }
         // 页面右下方
-        document.querySelector('.ad-report.ad-floor-exp.right-bottom-banner').remove()
+        let ad3 = document.querySelector('.ad-report.ad-floor-exp.right-bottom-banner')
+        if (ad3) {
+            ad3.remove()
+            console.log('已移除广告位置：页面右下方');
+        }
     });
 })();
 ```
