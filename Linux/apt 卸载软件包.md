@@ -5,28 +5,24 @@
 ```bash
 sudo apt remove <软件包名称>
 ```
-
 
 例如，卸载 `curl` 软件包：
 
 ```bash
 sudo apt remove curl
 ```
-
 
 上述命令仅删除软件包的可执行文件和库文件，但会保留其配置文件。如果希望连同配置文件一起彻底删除，可以使用 `purge` 命令：
 
 ```bash
 sudo apt purge <软件包名称>
 ```
-
 
 例如，彻底卸载 `curl` 软件包及其配置文件：
 
 ```bash
 sudo apt purge curl
 ```
-
 
 **清理不再需要的依赖项**
 
@@ -35,7 +31,6 @@ sudo apt purge curl
 ```bash
 sudo apt autoremove
 ```
-
 
 **清理已下载的软件包缓存**
 
@@ -44,7 +39,6 @@ sudo apt autoremove
 ```bash
 sudo apt clean
 ```
-
 
 上述命令会删除 `/var/cache/apt/archives/` 目录下的所有软件包文件。
 
